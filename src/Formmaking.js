@@ -12,6 +12,7 @@ import {
 
 const Formmaking = () => {
   //todo: here we get the data the data from the local storage
+
   const getData = () => {
     let list = localStorage.getItem("lists");
 
@@ -76,7 +77,7 @@ const Formmaking = () => {
         </FormGroup>
       </Form>
       <ListGroup className="mt-5 mb-2 items">
-        {/* todo: here i've used map function to get the data where idx is the index number and i've expored it as id to the handle click function */}
+        {/* todo: here i've used map function to get the data where idx is the index number and i've exported it as id to the handle click function */}
 
         {data.map((elem, idx) => {
           return (
